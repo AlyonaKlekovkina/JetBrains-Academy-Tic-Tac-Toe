@@ -23,7 +23,7 @@ def get_coordinates():
                 print("Coordinates should be from 1 to 3!")
             elif the_field[3 - int(column)][int(row) - 1] == "X" or the_field[3 - int(column)][int(row) - 1] == "O":
                 print("This cell is occupied! Choose another one!")
-            elif (int(row) and int(column) == 1) or (int(row) and int(column) == 2) or (int(row) and int(column) == 3):
+            else:
                 return int(row), int(column)
         except ValueError:
             print("You should enter numbers!")
